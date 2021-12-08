@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Environnement humain et technique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <h1>Environnement humain et techniqe</h1>
+      <div class="content">
+      <ul>
+          <li>7 experts</li>
+          <li>daily meeting de 15 minutes tous les matins</li>
+          <li>Projet organisé en sprints de 2 semaines.</li>
+
+      </ul>
+    </div>
+    <h1>Spécifications techniques</h1>
+    <div class="content">
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Git</li>
+          <li>Gatsby</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Yarn</li>
+          <li>GraphQL</li>
+          <li>Azure</li>
+          <li>CosmosDB</li>
+          <li>TypeORM</li>
+          <li>Sanity</li>
+          <li>Apollo</li>
+        </ul>
+    </div>
+
+    <h2>Structure du projet</h2>
+    <div class="content">
+      <ul>
+        <li>le dossier SRC (partie front-end du volet front-office)</li>
+        <li>Le dossier back-fo (couche back-end du front-office)</li>
+        <li>Le dossier front-bo (front-end du back-office)</li>
+        <li>Le dossier back-bo (le back-end du back-office)</li>
+      </ul>
+    </div>
+
+    <h2>L'interaction entre les couches</h2>
+    <h3>Rôle de Gatsby</h3>
+    <div class="content">
+      <ul>
+        <li>Sert les fichiers statiques à partir d'un stockage de fichier Azure Storage Blob</li>
+       <li>Les API, à partir de fonctions Azure</li> 
+      </ul>
+    </div>
+    <h3>Les APIs et fonctions</h3>
+    <div class="content">
+    <ul>
+      <li>Les APIs consomment les données à partir de la BDD dans les dataSources CosmosDB</li>
+      <li>Les resolvers les récupèrent ensuite en appelant les méthodes de dataSource</li>
+      <li>Les Actions asynchrones sont exécuté depuis une "queue serverless"</li>
+      <li class="is-sr-only">Il s'agit d'un storage Azure qui exécute des fonctions serverLess</li>
+      <li>Les imports ou export sont réalisée par des logic apps</li>
+      <li>Sanity héberge les données statiques de l'applications image...</li>
+    </ul>
+  </div>
+
+
+  </body>
+</html>
